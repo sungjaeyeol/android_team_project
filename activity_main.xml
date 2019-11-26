@@ -24,8 +24,16 @@
             android:hint="Date :"
             android:layout_toRightOf="@+id/backBtn"
             android:textColor="#ffffff"
-            android:layout_toLeftOf="@+id/checkBtn"
+            android:layout_toLeftOf="@+id/dateBtn"
             android:background="@null"/>
+
+        <ImageView
+            android:id="@+id/dateBtn"
+            android:layout_width="30dp"
+            android:layout_toLeftOf="@+id/checkBtn"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/calendar" />
 
         <ImageView
             android:id="@+id/checkBtn"
