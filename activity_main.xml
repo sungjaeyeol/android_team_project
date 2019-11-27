@@ -14,26 +14,18 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_margin="10dp"
-            android:src="@drawable/back" />
+            android:src="@drawable/ic_launcher_foreground" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/diaryDate"
-            android:textColorHint="@color/white"
+            android:textColorHint="#D3F1F1F1"
             android:hint="Date :"
             android:layout_toRightOf="@+id/backBtn"
             android:textColor="#ffffff"
-            android:layout_toLeftOf="@+id/dateBtn"
-            android:background="@null"/>
-
-        <ImageView
-            android:id="@+id/dateBtn"
-            android:layout_width="30dp"
             android:layout_toLeftOf="@+id/checkBtn"
-            android:layout_height="30dp"
-            android:layout_margin="10dp"
-            android:src="@drawable/calendar" />
+            android:background="@null"/>
 
         <ImageView
             android:id="@+id/checkBtn"
@@ -41,9 +33,15 @@
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_margin="10dp"
-            android:src="@drawable/tick" />
+            android:src="@drawable/ic_launcher_foreground" />
 
     </RelativeLayout>
+
+    <com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calendarView">
+    </com.shrikanthravi.collapsiblecalendarview.widget.CollapsibleCalendar>
 
     <EditText
         android:layout_width="match_parent"
